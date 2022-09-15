@@ -38,7 +38,7 @@ public class Investment {
             System.out.printf("Error: Please enter a decimal number. You entered \"%s\"",
                     kbd.next());
             return; // exit main
-        }
+        } // c is validated
 
         // prompt user to enter r
         System.out.print("Please enter the rate of interest: ");
@@ -58,7 +58,7 @@ public class Investment {
             System.out.printf("Error: Please enter a decimal number. You entered \"%s\"",
                     kbd.next());
             return; // exit main
-        }
+        } // r is validated
 
         // prompt user to enter value for t
         System.out.print("Please enter number of years: ");
@@ -77,7 +77,7 @@ public class Investment {
             System.out.printf("Error: Please enter an integer. You entered \"%s\"",
                     kbd.next());
             return; // exit main
-        }
+        } // t is validated
 
         // prompt user to enter a value for n
         System.out.print("Please enter number of times interest is compounded per year: ");
@@ -95,7 +95,7 @@ public class Investment {
             System.out.printf("Error: Please enter an integer. You entered \"%s\"",
                     kbd.next());
             return; // exit main
-        }
+        } // n is validated
 
         // call method to calculate investment
         System.out.printf("💰Your investment is worth $%.2f 💰",
