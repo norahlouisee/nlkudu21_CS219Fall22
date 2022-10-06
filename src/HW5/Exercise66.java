@@ -7,20 +7,22 @@ public class Exercise66 {
 
         for(int i=0; i < word.length(); i++) {
 
-            // test if the character in the word is in the tiles
-            if(tiles.indexOf(word.charAt(i)) == -1) {
+            // declare variable to keep track of the current character index
+            int ch = tiles.indexOf(word.charAt(i));
+
+            // test if the current character in the word is in the tiles
+            if(ch == -1) {
+                // if character is -1 character is not in tiles
                 return false;
             }
 
-            // remove character from tiles string
+            // if character is in tiles remove character from tiles string
             else {
                 // index of character to remove from tiles
-                int ch = tiles.indexOf(word.charAt(i));
                 tiles = tiles.substring(0, ch)
                         + tiles.substring(ch + 1);
-
             }
-        }
+        } // for
         return true;
     }
 
@@ -33,8 +35,7 @@ public class Exercise66 {
         System.out.println(!canSpell("weekend", "wrbreoowdkcn"));
         System.out.println(canSpell("history", "urieoaishty"));
         System.out.println(!canSpell("water", "aojvndarert"));
-
-
+        System.out.println(!canSpell("pqrc", "4308g2qj"));
     }
 
 }
